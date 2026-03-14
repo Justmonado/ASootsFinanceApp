@@ -12,3 +12,9 @@ val Pink40 = Color(0xFF7D5260)
 
 val DarkText = Color(0xFF1A1A2E)
 val GrayText = Color(0xFF8A8A9A)
+val MintGreen = Color(0xFFD4EDE4)
+val SoftBeige = Color(0xFFF0E6D8)
+val LavenderBlue = Color(0xFFDDDBF0)
+val CardBackground = Color(0xFFFFFFFF)
+val BackgroundColor = Color(0xFFF8F8FA)
+

@@ -1,10 +1,9 @@
-package com.pajasoft.asootsfinanceapp.Header
+package com.pajasoft.asootsfinanceapp.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -24,7 +23,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.pajasoft.asootsfinanceapp.Inicio
 import com.pajasoft.asootsfinanceapp.models.user
 import com.pajasoft.asootsfinanceapp.ui.theme.ASootsFinanceAppTheme
 import  com.pajasoft.asootsfinanceapp.ui.theme.DarkText
@@ -82,10 +80,3 @@ fun Header(){
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ASootsFinanceAppTheme {
-        Header()
-    }
-}
