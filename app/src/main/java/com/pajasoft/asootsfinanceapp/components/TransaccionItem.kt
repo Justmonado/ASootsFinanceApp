@@ -5,11 +5,9 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ShoppingCart
@@ -24,14 +22,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.pajasoft.asootsfinanceapp.models.Tarjetas
 import com.pajasoft.asootsfinanceapp.models.Transaccion
 import com.pajasoft.asootsfinanceapp.ui.theme.ASootsFinanceAppTheme
 import com.pajasoft.asootsfinanceapp.ui.theme.GrayText
-import com.pajasoft.asootsfinanceapp.ui.theme.IconBackground
-import com.pajasoft.asootsfinanceapp.ui.theme.LavenderBlue
-import com.pajasoft.asootsfinanceapp.ui.theme.MintGreen
-import com.pajasoft.asootsfinanceapp.ui.theme.SoftBeige
 
 @Composable
 fun TransactionItem(transaccion: Transaccion) {

@@ -1,12 +1,9 @@
 package com.pajasoft.asootsfinanceapp.components
 
-import android.graphics.drawable.Icon
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -27,14 +24,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.pajasoft.asootsfinanceapp.Inicio
 import com.pajasoft.asootsfinanceapp.models.Tarjetas
 import com.pajasoft.asootsfinanceapp.ui.theme.ASootsFinanceAppTheme
 import com.pajasoft.asootsfinanceapp.ui.theme.MintGreen
 import com.pajasoft.asootsfinanceapp.ui.theme.SoftBeige
 import com.pajasoft.asootsfinanceapp.ui.theme.LavenderBlue
-import  com.pajasoft.asootsfinanceapp.ui.theme.CardBackground
-import com.pajasoft.asootsfinanceapp.ui.theme.BackgroundColor
+
 import com.pajasoft.asootsfinanceapp.ui.theme.DarkText
 import com.pajasoft.asootsfinanceapp.ui.theme.GrayText
 
