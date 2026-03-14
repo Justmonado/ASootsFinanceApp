@@ -22,8 +22,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.pajasoft.asootsfinanceapp.components.Header
+import com.pajasoft.asootsfinanceapp.models.Tarjetas
 import com.pajasoft.asootsfinanceapp.models.user
 import com.pajasoft.asootsfinanceapp.ui.theme.ASootsFinanceAppTheme
+import com.pajasoft.asootsfinanceapp.components.CardsSection
 
 
 class MainActivity : ComponentActivity() {
@@ -44,45 +47,14 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Inicio(innerPadding: PaddingValues){
 
-    LazyColumn(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding()
-    ) {
-        item {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = 20.dp),
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Column {
-                    Text(
-                        text = "Hola ${user.nombre}",
-                        fontSize = 22.sp
 
-                    )
-                    Text("Bienvenido")
-                }
-                Icon(
-                    Icons.Default.Menu,
-                    contentDescription = null
-                    )
-            }
-        }
-    }
+    
+
 }
 
 
 
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
 @Preview(showBackground = true)
 @Composable
