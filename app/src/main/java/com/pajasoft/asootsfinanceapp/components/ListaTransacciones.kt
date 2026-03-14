@@ -16,7 +16,7 @@ import com.pajasoft.asootsfinanceapp.models.Transaccion
 import com.pajasoft.asootsfinanceapp.ui.theme.GrayText
 
 @Composable
-fun TransactionsSection(transaccion: List<Transaccion>) {
+fun TransactionsList(transaccion: List<Transaccion>) {
     Column(modifier = Modifier.fillMaxWidth()) {
 
         Row(
