@@ -28,7 +28,7 @@ import com.pajasoft.asootsfinanceapp.ui.theme.MintGreen
 import com.pajasoft.asootsfinanceapp.ui.theme.SoftBeige
 
 @Composable
-fun HomeScreen() {
+fun Inicio() {
 
     val user = User(nombre = "Alfonso", saldo = 2500.00)
 

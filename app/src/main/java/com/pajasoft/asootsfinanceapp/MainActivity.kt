@@ -25,8 +25,7 @@ import androidx.compose.ui.unit.dp
 
 import com.pajasoft.asootsfinanceapp.ui.theme.ASootsFinanceAppTheme
 
-import com.pajasoft.asootsfinanceapp.components.HomeScreen
-
+import com.pajasoft.asootsfinanceapp.components.Inicio
 
 
 class MainActivity : ComponentActivity() {
@@ -36,7 +35,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ASootsFinanceAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Inicio(innerPadding)
+                    Inicio2(innerPadding)
                 }
             }
         }
@@ -45,10 +44,10 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun Inicio(innerPadding: PaddingValues) {
+fun Inicio2(innerPadding: PaddingValues) {
     Box(modifier = Modifier
         .padding(innerPadding)) {
-        HomeScreen()
+        Inicio()
     }
 }
 
@@ -61,6 +60,6 @@ fun Inicio(innerPadding: PaddingValues) {
 @Composable
 fun GreetingPreview() {
     ASootsFinanceAppTheme {
-       Inicio(innerPadding = PaddingValues(top = 0.dp))
+       Inicio2(innerPadding = PaddingValues(top = 0.dp))
     }
 }
