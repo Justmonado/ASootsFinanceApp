@@ -1,18 +1,12 @@
 package com.pajasoft.asootsfinanceapp.components
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ShoppingCart
-import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -29,70 +23,71 @@ import com.pajasoft.asootsfinanceapp.ui.theme.GrayText
 @Composable
 fun TransactionItem(transaccion: Transaccion) {
 
-    Row(
+    Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 20.dp, vertical = 12.dp),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.SpaceBetween
+            .padding(horizontal = 20.dp, vertical = 6.dp),
+        shape = RoundedCornerShape(16.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White)
     ) {
 
         Row(
-            verticalAlignment = Alignment.CenterVertically
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
         ) {
 
-            Box(
-                modifier = Modifier
-                    .size(45.dp)
-                    .clip(CircleShape)
-                    .background(Color.Black),
-                contentAlignment = Alignment.Center
-            ) {
-                Icon(
-                    imageVector = Icons.Default.ShoppingCart,
-                    contentDescription = "icon",
-                    tint = Color.White
-                )
+            Row(verticalAlignment = Alignment.CenterVertically) {
+
+                Box(
+                    modifier = Modifier
+                        .size(45.dp)
+                        .clip(CircleShape)
+                        .background(Color.Black),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.ShoppingCart,
+                        contentDescription = "icon",
+                        tint = Color.White
+                    )
+                }
+
+                Column(
+                    modifier = Modifier.padding(start = 12.dp)
+                ) {
+
+                    Text(
+                        text = transaccion.nombre,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 15.sp
+                    )
+
+                    Text(
+                        text = transaccion.categoria,
+                        color = GrayText,
+                        fontSize = 13.sp
+                    )
+                }
             }
 
-            Column(
-                modifier = Modifier
-                    .padding(start = 12.dp)
-            ) {
+            Column(horizontalAlignment = Alignment.End) {
 
                 Text(
-                    text = transaccion.nombre,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 15.sp
+                    text = "$${transaccion.monto}",
+                    fontWeight = FontWeight.Bold
                 )
 
                 Text(
-                    text = transaccion.categoria,
+                    text = transaccion.time,
                     color = GrayText,
-                    fontSize = 13.sp
+                    fontSize = 12.sp
                 )
-
             }
-
         }
-
-        Column(
-            horizontalAlignment = Alignment.End
-        ) {
-
-            Text(
-                text = "$${transaccion.monto}",
-                fontWeight = FontWeight.Bold
-            )
-
-            Text(
-                text = transaccion.time,
-                color = GrayText,
-                fontSize = 12.sp
-            )
-
-        }
-
     }
 }
 

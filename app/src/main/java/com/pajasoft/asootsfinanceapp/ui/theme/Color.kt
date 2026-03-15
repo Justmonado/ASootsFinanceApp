@@ -16,6 +16,7 @@ val MintGreen = Color(0xFFD4EDE4)
 val SoftBeige = Color(0xFFF0E6D8)
 val LavenderBlue = Color(0xFFDDDBF0)
 val CardBackground = Color(0xFFFFFFFF)
-val BackgroundColor = Color(0xFFF8F8FA)
+val BackgroundColor = Color(0xFFE7E7F5)
 val IconBackground = Color(0xFF1A1A2E)
+
 

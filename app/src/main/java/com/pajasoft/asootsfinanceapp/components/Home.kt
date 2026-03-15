@@ -28,7 +28,7 @@ import com.pajasoft.asootsfinanceapp.ui.theme.MintGreen
 import com.pajasoft.asootsfinanceapp.ui.theme.SoftBeige
 
 @Composable
-fun Inicio() {
+fun HomeScreen() {
 
     val user = User(nombre = "Alfonso", saldo = 2500.00)
 
@@ -132,7 +132,9 @@ fun Inicio() {
         Spacer(modifier = Modifier.height(24.dp))
 
 
-        Column(modifier = Modifier.weight(1f)) {
+        Column(modifier = Modifier
+            .weight(1f)
+        ) {
 
             Row(
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
@@ -144,7 +146,8 @@ fun Inicio() {
 
 
             LazyColumn(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.
+                fillMaxSize(),
                 contentPadding = PaddingValues(bottom = 16.dp)
             ) {
             items(transaccion) { item ->
