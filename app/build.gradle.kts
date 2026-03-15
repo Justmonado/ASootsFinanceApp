@@ -56,4 +56,5 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.ui.tooling)
+    implementation("org.jetbrains.compose.material:material-icons-extended:1.7.3")
 }
