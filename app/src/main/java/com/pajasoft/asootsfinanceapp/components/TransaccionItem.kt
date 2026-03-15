@@ -50,7 +50,7 @@ fun TransactionItem(transaccion: Transaccion) {
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.ShoppingCart,
+                        imageVector = transaccion.icon,
                         contentDescription = "icon",
                         tint = Color.White
                     )
@@ -99,7 +99,8 @@ fun PreviewTransacciones(){
         nombre = "Supermarket",
         categoria = "Groceries",
         monto = 45.99,
-        time = "10:30 AM"
+        time = "10:30 AM",
+        icon = Icons.Default.ShoppingCart
     )
 
     ASootsFinanceAppTheme {
